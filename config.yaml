@@ -1,37 +1,37 @@
 settings:
-  title: 'Status Page'
+  title: '状态健康检查'
   url: 'https://status-page.eidam.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
-  allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
-  monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
-  monitorLabelNoData: 'No data'
-  dayInHistogramNoData: 'No data'
+  allmonitorsOperational: '全部系统都在运行'
+  notAllmonitorsOperational: '部分系统在运行'
+  monitorLabelOperational: '运行'
+  monitorLabelNotOperational: '未运行'
+  monitorLabelNoData: '无数据'
+  dayInHistogramNoData: '无数据'
   dayInHistogramOperational: 'All good'
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
   - id: wms-laowanhui
-    name: laowanhui
+    name: 老碗会
     url: 'https://wms.laowanhui.com/'
     method: GET
     expectStatus: 200
   - id: wms-fuqueyun
-    name: fuqueyun
+    name: 富鹊云
     url: 'https://wms.fuqueyun.com/'
     method: GET
     expectStatus: 200
   - id: wms-sfcchina
-    name: sfcchina
+    name: 新版测试
     url: 'https://newwms.sfcchina.com.cn/'
     method: GET
     expectStatus: 200
   - id: wms-yihetang
-    name: yihetang
+    name: 益禾堂
     url: 'https://wms.yihetang.com/'
     method: GET
     expectStatus: 200
